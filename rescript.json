@@ -1,0 +1,45 @@
+{
+  "name": "eastest",
+  "version": "0.0.0",
+  "jsx": {
+    "version": 4,
+    "mode": "automatic"
+  },
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "esmodule",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "namespace": false,
+  "bsc-flags": ["-open RescriptCore"],
+  "pinned-dependencies": [],
+  "bs-dependencies": [
+    "@greenlabs/ppx-spice",
+    "@rescript/core",
+    "@rescript/react",
+    "rescript-react-native"
+  ],
+  "ppx-flags": [["@greenlabs/ppx-spice/ppx", "-uncurried"]],
+  "warnings": {
+    "error": true,
+    "number": "-48"
+  },
+  "reanalyze": {
+    "analysis": ["dce"],
+    "suppress": [
+      "src/bindings",
+      "src/components/Svgr.res",
+      "src/components/FMIcon.res",
+      "src/navigation/drawer/DrawerIcon.res"
+    ],
+    "unsuppress": []
+  }
+}

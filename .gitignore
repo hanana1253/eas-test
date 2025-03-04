@@ -72,3 +72,20 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+
+# rescript
+lib
+.bsb.lock
+*.gen.ts
+*.gen.tsx
+*.bs.js
+
+# Expo
+.expo
+dist/
+web-build/
+
+.env
+*.apk
+*.tar.gz
