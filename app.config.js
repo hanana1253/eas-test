@@ -46,6 +46,7 @@ export default {
   ...getEnvironmentConfig(),
   name: 'eastest',
   slug: 'eastest',
+  owner: 'hangyul',
   displayName: 'eastest',
   ios: {
     bundleIdentifier: 'com.MyApp',
